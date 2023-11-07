@@ -1,4 +1,5 @@
 node_modules
+.idea
 
 /.cache
 /functions/\[\[path\]\].js
@@ -7,3 +8,6 @@ node_modules
 /functions/version.txt
 /public/build
 .dev.vars
+/.wrangler
+
+components.261057.json
