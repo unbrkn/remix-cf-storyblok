@@ -17,7 +17,7 @@ import Page from "~/components/content_types/page";
 import  "./styles/tailwind.css";
 
 storyblokInit({
-    accessToken: "sOonjAFQvQ92oF3B3yFFTAtt",
+    accessToken: "some-token",
     use: [apiPlugin],
     components: {
         feature: Feature,

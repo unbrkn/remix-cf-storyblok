@@ -11,7 +11,7 @@ It is currently not possible to use global envinroment-variables with Cloudflare
 
 ```ts
 storyblokInit({
-    accessToken: "sOonjAFQvQ92oF3B3yFFTAtt", // <-- change this
+    accessToken: "some-token", // <-- change this
     use: [apiPlugin],
     components: {
         feature: Feature,
