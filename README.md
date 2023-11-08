@@ -1,8 +1,26 @@
-# Welcome to Remix!
+# Remix + Cloudflare + Storyblok
 
 - [Remix Docs](https://remix.run/docs)
+- [Cloudflare Pages](https://pages.cloudflare.com/)
+- [Storyblok](https://www.storyblok.com/)
 
 ## Development
+
+To connect the Storyblok API, you will need to change `accessToken` in `root.tsx`.
+It is currently not possible to use global envinroment-variables with Cloudflare Pages.
+
+```ts
+storyblokInit({
+    accessToken: "sOonjAFQvQ92oF3B3yFFTAtt", // <-- change this
+    use: [apiPlugin],
+    components: {
+        feature: Feature,
+        grid: Grid,
+        teaser: Teaser,
+        page: Page,
+    }
+});
+```
 
 You will be utilizing Wrangler for local development to emulate the Cloudflare runtime. This is already wired up in your package.json as the `dev` script:
 
